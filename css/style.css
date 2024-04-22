@@ -131,6 +131,31 @@ body{
   margin-bottom: 20px;
 }
 
+/* Testimonials */
+
+.testimonials{
+  padding: 40px 0px;
+}
+
+.testimonials .testimonials-heading{
+  width: 70%;
+  margin-bottom: 3rem;
+}
+
+.testimonials-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials-grid .card p:nth-child(2){
+  margin-top: 40px;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+
+
 
 /* ------------------------------------------ */
 
@@ -237,4 +262,13 @@ body{
 .bg-black{
   background: var(--dark-color);
   color: var(--light-color);
+}
+
+/* Card */
+
+.card{
+  background: var(--light-color);
+  color: var(--dark-color);
+  padding: 20px;
+  border-radius: 10px;
 }
