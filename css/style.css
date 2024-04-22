@@ -334,29 +334,6 @@ body{
   transition: 0.3s;
 }
 
-/* Media Queries */
-@media (max-width: 960px){
-
-}
-
-@media (max-width: 670px){
-  .navbar .main-menu{
-    display: none;
-  }
-
-  .navbar .hamburger-button{
-    display: block;
-  }
-  
-
-}
-
-@media (max-width: 500px){
-
-}
-
-
-
 
 /* ------------------------------------------ */
 
@@ -473,5 +450,48 @@ body{
 .bg-black{
   background: var(--dark-color);
   color: var(--light-color);
+}
+
+
+/* Media Queries */
+@media (max-width: 960px){
+  .text-xxl{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 670px){
+  .navbar .main-menu{
+    display: none;
+  }
+
+  .navbar .hamburger-button{
+    display: block;
+  }
+
+  .hero .container{
+    background: url('../images/hero-bg-mobile.png') no-repeat;
+    background-size: 400px 400px;
+    background-position: bottom;
+    height: 770px;
+  }
+  
+  .hero .hero-content,
+  .hero .hero-text{
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-buttons .btn{
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px){
+
 }
 
