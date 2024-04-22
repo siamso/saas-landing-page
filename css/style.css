@@ -55,6 +55,7 @@ body{
   font-size: var(--font-size-primary);
   line-height: var(--line-height-primary);
   background: var(--secondary-light-color);
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -138,8 +139,9 @@ body{
 }
 
 .testimonials .testimonials-heading{
-  width: 70%;
+  width: 100%;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .testimonials .testimonials-grid{
@@ -414,13 +416,13 @@ body{
   margin: 30px 0px 20px;
 }
 .text-md{
-  font-size: 1.2rem;
+  font-size: var(--font-size-md);
   line-height: var(--line-height-small-text);
   font-weight: normal;
   margin: 20px 0px 10px;
 }
 .text-sm{
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
   line-height: var(--line-height-primary);
   font-weight: normal;
   margin: 10px 0px 5px;
@@ -489,9 +491,45 @@ body{
     width: 100%;
   }
 
+  .testimonials .testimonials-heading{
+    max-width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card{
+    margin-right: 0;
+  }
+  .footer .footer-grid > div{
+    text-align: center;
+  }
+
+  /* text */
+  .text-xl{
+    font-size: 1.8rem;
+  }
+  .text-lg{
+    font-size: 1.5rem;
+  }
+  .text-md{
+    font-size: 1rem;
+  }
+  .text-sm{
+    font-size: 0.7rem;
+  }
+
 }
 
 @media (max-width: 500px){
-
+  .text-xxl{
+    font-size: 2rem;
+  }
 }
 
